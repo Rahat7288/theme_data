@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:truth_box/app/view/theme/app_colors.dart';
-import 'package:truth_box/app/view/theme/app_theme.dart';
 import 'package:truth_box/app/view/style/colors.dart';
 import 'package:truth_box/app/view/style/text_style.dart';
+import 'package:truth_box/app/view/theme/app_colors.dart';
+import 'package:truth_box/app/view/theme/app_theme.dart';
 
 class LightTheme extends AppTheme {
   @override
@@ -12,7 +12,7 @@ class LightTheme extends AppTheme {
   FilledButtonThemeData get filledButtonThemeData => FilledButtonThemeData(
         style: FilledButton.styleFrom(
           backgroundColor: colors.primary,
-          // foregroundColor: colors.surfaceColor,
+          foregroundColor: colors.headerText,
           textStyle: TextStyles.labelMedium,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
@@ -28,7 +28,7 @@ class LightTheme extends AppTheme {
         ),
         elevation: .7,
         backgroundColor: colors.primary,
-        // foregroundColor: colors.surfaceColor,
+        foregroundColor: colors.headerText,
       );
 
   @override
@@ -47,7 +47,9 @@ class LightTheme extends AppTheme {
       );
 
   @override
-  TextButtonThemeData get textButtonThemeData => throw UnimplementedError();
+  TextButtonThemeData get textButtonThemeData => TextButtonThemeData(
+        style: TextButton.styleFrom(),
+      );
 
   @override
   TextTheme get textTheme => TextTheme(
@@ -71,7 +73,7 @@ class LightTheme extends AppTheme {
   @override
   ThemeData get themeData => ThemeData(
         useMaterial3: true,
-        // scaffoldBackgroundColor: colors.surfaceColor,
+        scaffoldBackgroundColor: colors.backgroundColor,
         appBarTheme: AppBarTheme(
           backgroundColor: colors.primary,
           foregroundColor: colors.backgroundColor,

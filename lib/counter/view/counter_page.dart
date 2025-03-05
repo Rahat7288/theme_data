@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:truth_box/app/view/theme/dark_theme/dark_theme.dart';
+import 'package:truth_box/app/view/theme/light_theme/light_theme.dart';
+import 'package:truth_box/app/view/theme/theme_cubit.dart';
 import 'package:truth_box/app/view/widgets/social_button.dart';
 import 'package:truth_box/counter/counter.dart';
 import 'package:truth_box/l10n/l10n.dart';
@@ -31,8 +34,10 @@ class CounterView extends StatelessWidget {
             SizedBox(
               width: double.maxFinite,
               child: FilledButton(
-                onPressed: () {},
-                child: Text("Primary button"),
+                onPressed: () {
+                  context.read<ThemeCubit>().changeTheme(LightTheme());
+                },
+                child: Text('Primary Theme'),
               ),
             ),
             const SizedBox(
@@ -41,13 +46,15 @@ class CounterView extends StatelessWidget {
             SizedBox(
               width: double.maxFinite,
               child: OutlinedButton(
-                onPressed: () {},
-                child: Text("Outlined Button"),
+                onPressed: () {
+                  context.read<ThemeCubit>().changeTheme(DarkTheme());
+                },
+                child: Text('Dark Theme'),
               ),
             ),
             TextField(
               decoration: InputDecoration(
-                label: Text("Enter Email"),
+                label: Text('Enter Email'),
               ),
             ),
             const SizedBox(
@@ -66,7 +73,17 @@ class CounterView extends StatelessWidget {
               child: SocialButton.google(
                 onTap: () {},
               ),
-            )
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: SocialButton.apple(
+                onlyIcon: true,
+                onTap: () {},
+              ),
+            ),
           ],
         ),
       ),
