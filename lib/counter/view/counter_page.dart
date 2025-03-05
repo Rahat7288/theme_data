@@ -35,9 +35,9 @@ class CounterView extends StatelessWidget {
               width: double.maxFinite,
               child: FilledButton(
                 onPressed: () {
-                  context.read<ThemeCubit>().changeTheme(LightTheme());
+                  context.changeTheme(LightTheme());
                 },
-                child: Text('Primary Theme'),
+                child: const Text('Primary Theme'),
               ),
             ),
             const SizedBox(
@@ -47,12 +47,12 @@ class CounterView extends StatelessWidget {
               width: double.maxFinite,
               child: OutlinedButton(
                 onPressed: () {
-                  context.read<ThemeCubit>().changeTheme(DarkTheme());
+                  context.changeTheme(DarkTheme());
                 },
-                child: Text('Dark Theme'),
+                child: const Text('Dark Theme'),
               ),
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(
                 label: Text('Enter Email'),
               ),
@@ -60,9 +60,9 @@ class CounterView extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(
-                label: Text("Enter pasword"),
+                label: Text('Enter pasword'),
               ),
             ),
             const SizedBox(

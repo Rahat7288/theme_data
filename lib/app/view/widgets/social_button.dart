@@ -58,7 +58,7 @@ class SocialButton extends StatelessWidget {
         onPressed: onTap,
         icon: SvgPicture.asset(iconPath),
         style: FilledButton.styleFrom(
-          backgroundColor: context.read<ThemeCubit>().state.colors.surface100,
+          backgroundColor: context.colors.surface100,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
@@ -71,12 +71,12 @@ class SocialButton extends StatelessWidget {
       label: Text(
         label,
         style: TextStyles.titleLarge.copyWith(
-          color: context.read<ThemeCubit>().state.colors.secondary2nd,
+          color: context.colors.secondary2nd,
         ),
       ),
       style: FilledButton.styleFrom(
         side: BorderSide(
-          color: context.read<ThemeCubit>().state.colors.borderColor,
+          color: context.colors.borderColor,
         ),
       ),
     );
