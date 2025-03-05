@@ -1,0 +1,2 @@
+/Users/macbookpro/Desktop/WorkPlace/practice/vg_cli/truth_box/android/app/.cxx/Debug/g3567p3e/x86/CMakeFiles/edit_cache.dir
+/Users/macbookpro/Desktop/WorkPlace/practice/vg_cli/truth_box/android/app/.cxx/Debug/g3567p3e/x86/CMakeFiles/rebuild_cache.dir
