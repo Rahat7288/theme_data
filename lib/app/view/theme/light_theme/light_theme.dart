@@ -81,139 +81,130 @@ class LightTheme extends AppTheme {
         filledButtonTheme: filledButtonThemeData,
         outlinedButtonTheme: outlinedButtonThemeData,
         floatingActionButtonTheme: floatingActionButtonThemeData,
+        inputDecorationTheme: inputDecorationTheme,
+      );
+
+  @override
+  InputDecorationTheme get inputDecorationTheme => InputDecorationTheme(
+        filled: true,
+        fillColor: colors.surface50,
+        labelStyle: TextStyles.labelLarge.copyWith(
+          color: colors.surface400,
+          fontWeight: FontWeight.w400,
+        ),
+        suffixIconColor: colors.surface500,
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(
+            color: colors.primary,
+          ),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(
+            color: Colors.transparent,
+          ),
+        ),
       );
 }
 
 class LightThemeColors extends AppColors {
   @override
-  // TODO: implement backgroundColor
-  Color get backgroundColor => throw UnimplementedError();
+  Color get backgroundColor => AppColor.lightBackgroundColor;
 
   @override
-  // TODO: implement borderColor
-  Color get borderColor => throw UnimplementedError();
+  Color get borderColor => AppColor.borderColor;
 
   @override
-  // TODO: implement deviderColor
-  Color get deviderColor => throw UnimplementedError();
+  Color get deviderColor => AppColor.borderColor;
 
   @override
-  // TODO: implement error
-  Color get error => throw UnimplementedError();
+  Color get error => AppColor.errorColor;
 
   @override
-  // TODO: implement faild
-  Color get faild => throw UnimplementedError();
+  Color get faild => AppColor.errorColor;
 
   @override
-  // TODO: implement headerText
-  Color get headerText => throw UnimplementedError();
+  Color get headerText => AppColor.headerColor;
 
   @override
-  // TODO: implement primary
-  Color get primary => throw UnimplementedError();
+  Color get primary => AppColor.primary;
 
   @override
-  // TODO: implement primary2nd
-  Color get primary2nd => throw UnimplementedError();
+  Color get primary2nd => AppColor.primary2nd;
 
   @override
-  // TODO: implement primary3rd
-  Color get primary3rd => throw UnimplementedError();
+  Color get primary3rd => AppColor.primary3rd;
 
   @override
-  // TODO: implement primary4th
-  Color get primary4th => throw UnimplementedError();
+  Color get primary4th => AppColor.primary4th;
 
   @override
-  // TODO: implement secondary2nd
-  Color get secondary2nd => throw UnimplementedError();
+  Color get secondary2nd => AppColor.secondary2nd;
 
   @override
-  // TODO: implement secondary3rd
-  Color get secondary3rd => throw UnimplementedError();
+  Color get secondary3rd => AppColor.secondary3rd;
 
   @override
-  // TODO: implement secondary4th
-  Color get secondary4th => throw UnimplementedError();
+  Color get secondary4th => AppColor.secondary4th;
 
   @override
-  // TODO: implement seconday
-  Color get seconday => throw UnimplementedError();
+  Color get seconday => AppColor.secondary;
 
   @override
-  // TODO: implement shadowColor
-  Color get shadowColor => throw UnimplementedError();
+  Color get shadowColor => AppColor.shadowColor;
 
   @override
-  // TODO: implement subTitleText1
-  Color get subTitleText1 => throw UnimplementedError();
+  Color get subTitleText1 => AppColor.subTitleText1Color;
 
   @override
-  // TODO: implement subTitleText2
-  Color get subTitleText2 => throw UnimplementedError();
+  Color get subTitleText2 => AppColor.subTitleText1Color;
 
   @override
-  // TODO: implement success
-  Color get success => throw UnimplementedError();
+  Color get success => AppColor.successColor;
 
   @override
-  // TODO: implement surface100
-  Color get surface100 => throw UnimplementedError();
+  Color get surface100 => AppColor.surface100;
 
   @override
-  // TODO: implement surface200
-  Color get surface200 => throw UnimplementedError();
+  Color get surface200 => AppColor.surface200;
 
   @override
-  // TODO: implement surface300
-  Color get surface300 => throw UnimplementedError();
+  Color get surface300 => AppColor.surface300;
 
   @override
-  // TODO: implement surface400
-  Color get surface400 => throw UnimplementedError();
+  Color get surface400 => AppColor.surface400;
 
   @override
-  // TODO: implement surface50
-  Color get surface50 => throw UnimplementedError();
+  Color get surface50 => AppColor.surface50;
 
   @override
-  // TODO: implement surface500
-  Color get surface500 => throw UnimplementedError();
+  Color get surface500 => AppColor.surface500;
 
   @override
-  // TODO: implement surface600
-  Color get surface600 => throw UnimplementedError();
+  Color get surface600 => AppColor.surface600;
 
   @override
-  // TODO: implement surface700
-  Color get surface700 => throw UnimplementedError();
+  Color get surface700 => AppColor.surface700;
 
   @override
-  // TODO: implement surface800
-  Color get surface800 => throw UnimplementedError();
+  Color get surface800 => AppColor.surface800;
 
   @override
-  // TODO: implement surface900
-  Color get surface900 => throw UnimplementedError();
+  Color get surface900 => AppColor.surface900;
 
   @override
-  // TODO: implement textColor1
-  Color get textColor1 => throw UnimplementedError();
+  Color get textColor1 => AppColor.titleText1Color;
 
   @override
-  // TODO: implement textColor2
-  Color get textColor2 => throw UnimplementedError();
+  Color get textColor2 => AppColor.titleText2Color;
 
   @override
-  // TODO: implement titleText1
-  Color get titleText1 => throw UnimplementedError();
+  Color get titleText1 => AppColor.titleText3Color;
 
   @override
-  // TODO: implement titleText2
-  Color get titleText2 => throw UnimplementedError();
+  Color get titleText2 => AppColor.titleText3Color;
 
   @override
-  // TODO: implement titleText3
-  Color get titleText3 => throw UnimplementedError();
+  Color get titleText3 => AppColor.titleText3Color;
 }

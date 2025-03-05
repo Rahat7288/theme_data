@@ -66,6 +66,10 @@ class DarkTheme extends AppTheme {
   @override
   // TODO: implement themeData
   ThemeData get themeData => ThemeData();
+
+  @override
+  // TODO: implement inputDecorationTheme
+  InputDecorationTheme get inputDecorationTheme => throw UnimplementedError();
 }
 
 class DarkThemeColors extends AppColors {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:truth_box/app/view/widgets/social_button.dart';
 import 'package:truth_box/counter/counter.dart';
 import 'package:truth_box/l10n/l10n.dart';
 
@@ -44,6 +45,28 @@ class CounterView extends StatelessWidget {
                 child: Text("Outlined Button"),
               ),
             ),
+            TextField(
+              decoration: InputDecoration(
+                label: Text("Enter Email"),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            TextField(
+              decoration: InputDecoration(
+                label: Text("Enter pasword"),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: SocialButton.google(
+                onTap: () {},
+              ),
+            )
           ],
         ),
       ),
