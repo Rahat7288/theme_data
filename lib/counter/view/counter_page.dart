@@ -80,8 +80,36 @@ class CounterView extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: SocialButton.apple(
-                onlyIcon: true,
                 onTap: () {},
+              ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            SizedBox(
+              width: MediaQuery.of(context).size.width * .6,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SocialButton.google(
+                    onlyIcon: true,
+                    onTap: () {},
+                  ),
+                  SocialButton.apple(
+                    onlyIcon: true,
+                    onTap: () {},
+                  ),
+                  SocialButton.facebook(
+                    onlyIcon: true,
+                    onTap: () {},
+                  ),
+                  SocialButton.instagram(
+                    onlyIcon: true,
+                    onTap: () {
+                      _showAlertDialog(context);
+                    },
+                  ),
+                ],
               ),
             ),
           ],
@@ -102,6 +130,26 @@ class CounterView extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  void _showAlertDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Alert!'),
+          content: Text('This is a basic AlertDialog.'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop(); // Close the dialog
+              },
+              child: Text('OK'),
+            ),
+          ],
+        );
+      },
     );
   }
 }

@@ -79,6 +79,12 @@ class LightTheme extends AppTheme {
           foregroundColor: colors.backgroundColor,
           titleTextStyle: TextStyles.labelMedium,
           toolbarHeight: 80,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(12),
+              bottomRight: Radius.circular(12),
+            ),
+          ),
         ),
         filledButtonTheme: filledButtonThemeData,
         outlinedButtonTheme: outlinedButtonThemeData,
@@ -91,7 +97,7 @@ class LightTheme extends AppTheme {
         filled: true,
         fillColor: colors.surface50,
         labelStyle: TextStyles.labelLarge.copyWith(
-          color: colors.surface400,
+          color: colors.textColor1,
           fontWeight: FontWeight.w400,
         ),
         suffixIconColor: colors.surface500,

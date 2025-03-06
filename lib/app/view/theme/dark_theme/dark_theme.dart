@@ -29,7 +29,9 @@ class DarkTheme extends AppTheme {
       );
 
   @override
-  IconButtonThemeData get iconButtonThemeData => IconButtonThemeData();
+  IconButtonThemeData get iconButtonThemeData => IconButtonThemeData(
+        style: IconButton.styleFrom(),
+      );
 
   @override
   OutlinedButtonThemeData get outlinedButtonThemeData =>
@@ -44,7 +46,9 @@ class DarkTheme extends AppTheme {
 
   @override
   TextButtonThemeData get textButtonThemeData => TextButtonThemeData(
-        style: TextButton.styleFrom(),
+        style: TextButton.styleFrom(
+          textStyle: TextStyles.labelSmall,
+        ),
       );
 
   @override
