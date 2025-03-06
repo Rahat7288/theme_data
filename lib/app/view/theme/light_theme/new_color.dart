@@ -9,6 +9,7 @@ class ProdAppColor {
   static const Color secondaryColor = Color(0XFF000000);
   //shade and text color =====================
   static const Color shadeColorGray200 = Color(0XFFC6C9CD);
+  static const Color shadeColorGray300 = Color(0XFFD9D9D9);
   static const Color shadeColorGray400 = Color(0XFF90969D);
   static const Color shadeColorGray500 = Color(0XFF757D85);
   static const Color shadeColorGray700 = Color(0XFF5D636A);
